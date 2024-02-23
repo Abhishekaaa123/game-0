@@ -1,0 +1,135 @@
+ 
+*{ 
+    color: white;
+    font-family: sans-serif;
+    transition: 0.2s ease-in-out;
+    user-select: none;
+}
+
+:root{
+    --bg-color:#1f242d;
+    --second-bg-color:  #323946;
+    --text-color:#fff;
+    --main-color:#0ef;
+}
+
+.align{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+body{
+    background-color: rgb(19, 26, 56);
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    text-align: center;
+    padding-top:5vw;
+    overflow: auto;
+}
+
+.turn-container{
+    width:170px;
+    height: 80px;
+    margin: auto;
+    font-size: 1.6REM;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-end: 3;
+    position: relative;
+}
+
+.turn-container h3{
+    margin: 0;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.statu{     
+  margin:0px;
+  padding: 0px;
+}
+
+.turn-container .turn-box{
+    border: 3px solid black;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.turn-container .turn-box:nth-child(even){
+    border-right: none;
+}
+
+.bg{
+    position:absolute;
+    bottom: 0;
+    left: 0;
+    width: 85px;
+    height: 40px;
+    background-color: #FF2E63;
+    z-index: -1;
+}
+
+.main-grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-auto-rows:repeat(3,1fr) ;
+    height: 250px;
+    width: 250px;
+    margin: 30px auto;
+    border: 2px solid #000;
+}
+
+.box{
+    cursor: pointer;
+    font-size: 2rem;
+    font-weight: 700;
+    border: 2px solid #000;
+}
+
+.box:hover{
+    background-color: #FF2E63;
+}
+
+#play-again{
+    background-color: #FF2E63;
+    padding: 10px 25px;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+#play-again:hover{
+    padding: 10px 40px;
+    background-color: aqua;
+    color: #000;
+}
+
+
+.social-media a{
+    
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    height: 3rem;
+    background:transparent ;
+    border: .2rem solid var(--main-color);
+    border-radius: 50%;
+    font-size: 2rem;
+    color: var(--main-color);
+    margin: 2rem 1.5rem 2rem 0;
+}
+
+.social-media a:hover{
+    background: var(--main-color);
+    color: var(--second-bg-color);
+    box-shadow: 0 0 1rem var(--main-color);
+
+}
+.social-media i{
+    color:gray;
+}
